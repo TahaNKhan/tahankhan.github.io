@@ -4,7 +4,7 @@ tag_text: Taha Khan's home page
 description: Main home page for Taha. Includes contact information, link to posts and other fun stuff.
 domain: tahankhan.github.io
 # baseurl: "/blog" # the subpath of your site, e.g. /blog
- url: "https://tahankhan.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://tahankhan.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 plugins:
   - jekyll-seo-tag
