@@ -1,0 +1,15 @@
+# Site settings
+title: Taha Khan
+tag_text: Taha Khan's home page
+description: Main home page for Taha. Includes contact information, link to posts and other fun stuff.
+# baseurl: "/blog" # the subpath of your site, e.g. /blog
+# url: "https://example.com" # the base hostname & protocol for your site, e.g. http://example.com
+
+plugins:
+  - jekyll-seo-tag
+
+# Build settings
+markdown: kramdown
+exclude: ["README.md"]
+sass:
+  style: compressed

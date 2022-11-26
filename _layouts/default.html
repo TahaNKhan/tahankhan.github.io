@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="{{ site.description }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+  <title>{{ site.title }}</title>
+  <link rel="stylesheet" href="/css/main.css">
+{% include head.html %}
+</head>
+<body>
+  <div class="container">
+    <h1 style="margin-bottom: 0; padding-bottom: 0;">
+      Taha Khan <br/> 
+      <small>Software Engineer</small>
+      
+    </h1>
+    <div><a href="https://github.com/TahaNKhan/">Github</a>&nbsp;&nbsp;<a href="https://www.linkedin.com/in/tahakhan1112/">LinkedIn</a>&nbsp;&nbsp;<a href="https://taha-khan.medium.com/">Posts</a>&nbsp;&nbsp<a href="mailto:taha1112@gmail.com">Email</a></div>
+    <hr/>
+    {{ content }}
+  </div>
+{% include scripts.html %}
+</body>
+</html>
