@@ -1,6 +1,8 @@
 <div id="footer">
 <center>
-<small> This site is powered by <a href="https://jekyllrb.com/">Jekyll</a> and uses the <a href="https://sblisesivdin.github.io/biscuit">Biscuit</a> theme <sup>with some minor hacks</sup></small><br/>
-<small>All rights reserved - {{ 'now' | date: "%Y" }}</small>
+<small>All rights reserved - <div id="current-year">2023</div></small>
+  <script>
+    document.getElementById("current-year").innerHTML = new Date().getFullYear().toString();
+  </script>
 </center>
 </div>
