@@ -8,5 +8,5 @@ I'm a software engineer, currently working at Alexa (voice assistant). I try to 
 
 - Checkout [my posts on medium](https://taha-khan.medium.com/) to see what I'm thinking about these days.
 - Dive into [my github](https://github.com/TahaNKhan/) to see what I'm cooking. It's usually some automation scripts or plugging APIs together to get my homelab working right.
-- Recruiters/Hiring managers, drop me [an email](mailto:taha1112@gmail.com) or connect [via LinkedIn](https://www.linkedin.com/in/tahakhan1112/).
+- Recruiters/Hiring managers, drop me [an email](mailto:taha1112+recruiting@gmail.com) or connect [via LinkedIn](https://www.linkedin.com/in/tahakhan1112/).
 
