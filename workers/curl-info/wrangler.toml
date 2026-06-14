@@ -1,0 +1,8 @@
+name = "curl-info"
+main = "src/index.ts"
+compatibility_date = "2024-01-01"
+
+# Route to intercept all requests to the domain
+routes = [
+  { pattern = "tahakhan.xyz", zone_name = "tahakhan.xyz" }
+]
