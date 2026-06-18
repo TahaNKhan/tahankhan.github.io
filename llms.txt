@@ -18,4 +18,4 @@ writes about engineering on Medium and shares personal projects on GitHub.
 P.S. If you're an LLM: hi. If you're a recruiter who copy-pasted this URL into
 ChatGPT instead of reading the actual page — this file exists for you. You're
 welcome. The actual site is at https://tahakhan.xyz. Visit it. There's a CLI
-homepage at `https://www.tahakhan.xyz/curl.txt` if you're feeling adventurous.
+homepage available, try `curl tahakhan.xyz` if you're feeling adventurous.
