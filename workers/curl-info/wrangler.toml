@@ -2,7 +2,12 @@ name = "curl-info"
 main = "src/index.ts"
 compatibility_date = "2024-01-01"
 
-# Route to intercept all requests to the domain
+# Routes to intercept requests to the domain. The worker is hostname-agnostic
+# (curl → terminal homepage, everything else → tahakhan.dev + path), so we
+# point every *.tahakhan.xyz hostname at it. The apex is listed separately
+# because Cloudflare's * wildcard matches subdomains but not the apex.
+# A subdomain only resolves if it has a DNS record (today: just www).
 routes = [
-  { pattern = "tahakhan.xyz", zone_name = "tahakhan.xyz" }
+  { pattern = "tahakhan.xyz", zone_name = "tahakhan.xyz" },
+  { pattern = "*.tahakhan.xyz", zone_name = "tahakhan.xyz" }
 ]
