@@ -53,8 +53,8 @@ export default {
       });
     }
 
-    // Otherwise redirect to www.tahakhan.xyz
+    // Otherwise redirect to tahakhan.dev
     const url = new URL(request.url);
-    return Response.redirect(`https://www.tahakhan.xyz${url.pathname}${url.search}`, 301);
+    return Response.redirect(`https://tahakhan.dev${url.pathname}${url.search}`, 301);
   },
 };
