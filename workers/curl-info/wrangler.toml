@@ -4,10 +4,14 @@ compatibility_date = "2024-01-01"
 
 # Routes to intercept requests to the domain. The worker is hostname-agnostic
 # (curl → terminal homepage, everything else → tahakhan.dev + path), so we
-# point every *.tahakhan.xyz hostname at it. The apex is listed separately
-# because Cloudflare's * wildcard matches subdomains but not the apex.
-# A subdomain only resolves if it has a DNS record (today: just www).
+# point every *.tahakhan.xyz hostname at it.
+#
+# - Apex listed separately: Cloudflare's * wildcard matches subdomains, not the apex.
+# - Wildcard pattern needs /* : a wildcard hostname route without a path suffix
+#   only matches the root "/", so /* is required to catch every path. (A literal
+#   hostname covers the whole host implicitly; a wildcard does not.)
+# - A subdomain only resolves if it has a DNS record (today: just www).
 routes = [
-  { pattern = "tahakhan.xyz", zone_name = "tahakhan.xyz" },
-  { pattern = "*.tahakhan.xyz", zone_name = "tahakhan.xyz" }
+  { pattern = "tahakhan.xyz/*", zone_name = "tahakhan.xyz" },
+  { pattern = "*.tahakhan.xyz/*", zone_name = "tahakhan.xyz" }
 ]
